@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Comment } = require('c:/Users/nramo/onedrive/desktop/Lets-Tech-Blog/controllers/api/commentRoutes.js');
-const withAuth = require('../../utils/auth');
+const withAuth = require('c:/Users/nramo/onedrive/desktop/Lets-Tech-Blog/utils/auth');
 
 // Get all comments for a post
 router.get('/:post_id', async (req, res) => {

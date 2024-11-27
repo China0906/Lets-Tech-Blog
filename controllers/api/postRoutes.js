@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('c:/Users/nramo/onedrive/desktop/Lets-Tech-Blog/controllers/api/postRoutes.js');
-const withAuth = require('../../utils/auth');
+const withAuth = require('c:/Users/nramo/onedrive/desktop/Lets-Tech-Blog/utils/auth');
 
 // Get all posts
 router.get('/', async (req, res) => {

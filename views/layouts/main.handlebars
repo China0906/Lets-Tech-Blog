@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Lets Tech Blog}}</Lets Tech Blog>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    {{{body}}}
+    <header>
+        <h1>Tech Blog</h1>
+        <nav>
+            {{#if logged_in}}
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/logout">Logout</a>
+            {{else}}
+                <a href="/">Home</a>
+                <a href="/login">Login</a>
+                <a href="/signup">Sign Up</a>
+            {{/if}}
+        </nav>
+    </header>
+    <main class="container">
+        {{{body}}}
+    </main>
+    <footer>
+        <p>&copy; 2024  Lets Tech Blog | <a href="/">Home</a></p>
+    </footer>
 </body>
 </html>

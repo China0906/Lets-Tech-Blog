@@ -1,0 +1,22 @@
+<h1>Welcome to the Lets Tech Blog</h1>
+
+{{#if logged_in}}
+    <p>Welcome back, {{username}}!</p>
+    <a href="/dashboard">Go to Dashboard</a> | 
+    <a href="/logout">Logout</a>
+{{else}}
+    <a href="/login">Login</a> | 
+    <a href="/signup">Sign Up</a>
+{{/if}}
+
+<hr>
+
+{{#each posts}}
+<div class="post">
+    <h2>{{title}}</h2>
+    <p>By {{user.username}} on {{createdAt}}</p>
+    <p>{{content}}</p>
+    <a href="/post/{{id}}">Read more & comment</a>
+</div>
+<hr>
+{{/each}}
