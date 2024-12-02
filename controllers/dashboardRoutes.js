@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const { Post, User } = require('c:/Users/nramo/onedrive/desktop/Lets-Tech-Blog/controllers/dashboardRoutes.js');
-const withAuth = require('../utils/auth');
+const { Post, User } = require('./controllers/dashboardRoutes.js');
 
 // Dashboard route: show all posts by the logged-in user
 router.get('/', withAuth, async (req, res) => {

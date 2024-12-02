@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('c:/Users/nramo/onedrive/desktop/Lets-Tech-Blog/controllers/homeRoutes.js');
+const { Post, User, Comment } = require('./controllers/homeRoutes.js');
 
 router.get('/', async (req, res) => {
     try {
